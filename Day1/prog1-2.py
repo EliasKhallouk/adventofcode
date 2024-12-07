@@ -18,11 +18,6 @@ while i < len(data):
         i += 6
     j += 1
 
-'''
-print(data_left)
-print(data_right)
-'''
-
 # CALCUL DE LA SIMILARITE
 similaire = 0
 for i in data_left:
