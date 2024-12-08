@@ -1,7 +1,7 @@
 import bisect
 
 # LECTURE DU FICHIER
-with open('/home/userdepinfo/PROJECT/adventofcode/Day1/input.txt', 'r') as file:
+with open('Day01/input.txt', 'r') as file:
     data = file.read()
 
 # REMPLISSAGE DES TABLEAUX
