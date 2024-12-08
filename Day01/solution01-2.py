@@ -28,4 +28,4 @@ for i in data_left:
     similaire += i * compteur
 
 # AFFICHAGE DE LA SIMILARITE
-print(similaire)
+print(similaire) # --> 20351745

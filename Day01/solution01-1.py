@@ -24,4 +24,4 @@ for i in range (len(data_left)):
     distance += abs(int(data_left[i]) - int(data_right[i]))
 
 # AFFICHAGE DE LA DISTANCE TOTAL
-print(distance)
+print(distance) # --> 1579939
