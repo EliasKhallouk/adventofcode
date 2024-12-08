@@ -16,7 +16,6 @@ for i in range(len(data)):
             old_number = data[i][j]
             variation = 1
         elif data[i][j] < old_number and (variation == 2 or variation == 0) and difference <= 3 and difference >= 1:
-            variation = 1
             old_number = data[i][j]
             variation = 2
         else:
