@@ -34,10 +34,10 @@ Voici la structure des dossiers du projet :
 ADVENTOFCODE/
 │
 ├── Day01/              # Solution pour le Jour 1
+│   ├── consigne.md     # Explication du puzzle
 │   ├── input.txt       # Données d'entrée pour le puzzle
-│   ├── solution01-1.py # Code source de la solution partie 1
-|   ├── solution01-2.py # Code source de la solution partie 2
-│   └── consigne.md     # Explication du puzzle
+|   ├── solution01-1.py # Code source de la solution partie 1
+│   └── solution01-2.py # Code source de la solution partie 2
 ├── Day02/
 │   └── ...
 │
