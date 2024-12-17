@@ -2,7 +2,7 @@
 with open('Day05/input.txt', 'r') as file:
     data = file.read()
 
-# CALCULE DU NOMBRE DU
+# REMPLISSAGE DES LISTES
 result=0
 data = data.split("\n")
 
@@ -23,33 +23,23 @@ while z < len(data):
     data_vir.append(nums)
     z += 1
 
-for a in range(len(data_bar)):
-    print(data_bar[a])
-
+# CALCULE DU NOMBRE DE MISES A JOUR CORRECTEMENT ORDONNÉES
 flague = False
-#for i in range(len(data_vir)):
-for i in range(1):
+for i in range(len(data_vir)):
     compteur = 0
     for j in range(len(data_vir[i])):
         sous_compteur = 0
         for l in range(j+1,len(data_vir[i])):
             for k in range(len(data_bar)):
-                print("--",j,l,data_bar[k][0],data_bar[k][1],data_vir[i][j] == data_bar[k][0] and data_vir[i][j+l] == data_bar[k][1])
                 if data_vir[i][j] == data_bar[k][0] and data_vir[i][l] == data_bar[k][1]:
                     sous_compteur += 1
                     break
         
-        if(sous_compteur == len(data_vir[i])-1):
+        if(sous_compteur == len(data_vir[i])-1-j):
             compteur += 1
-        print(sous_compteur)
         
-    print("ee",compteur)
-    if(compteur == len(data_vir[i])-1):
+    if(compteur == len(data_vir[i])):
         result += data_vir[i][(len(data_vir[i]))//2]
-        
-    
-print(data_vir[0])
-print(sous_compteur)
 
 # AFFICHAGE DU NOMBRE DE XMAS
-print(result) # --> 231 < x
+print(result) # --> 4905
